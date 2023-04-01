@@ -1,0 +1,24 @@
+
+total_epochs: 300
+imgs_per_gpu: &b 2
+workers_per_gpu: 0
+checkpoint_epoch_interval: 10
+
+data_link: None
+
+dataset:
+  width: &sz 384
+  height: *sz
+  dataroot: "./data/CORN_2"
+  augment: True
+  shuffle: True
+  serial_batches: True
+
+model:
+
+  learning_rate: 1.0e-4
+
+  imgs_per_gpu: *b
+  img_size: *sz
+  dim_in: 64
+  max_conv_dim: 512

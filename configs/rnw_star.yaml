@@ -1,0 +1,41 @@
+
+total_epochs: 300
+imgs_per_gpu: &b 1
+workers_per_gpu: 0
+checkpoint_epoch_interval: 10
+
+data_link: None
+
+dataset:
+  phase: 'train'
+  width: &sz 384
+  height: *sz
+  max_dataset_size: 340
+  dataroot: "./data/CORN_2"
+  augment: True
+  shuffle: True
+  serial_batches: False
+
+model:
+  learning_rate: 1.0e-4
+
+  imgs_per_gpu: *b
+  img_size: *sz
+  dim_in: 64
+  ae_dim_out: 512
+  max_conv_dim: 512
+  num_domains: 2
+  style_dim: 64
+  resnet_layers: 50
+
+  lambda_reg: 1
+  lambda_style: 1
+  lambda_recon: 1
+  lambda_Structure: 0.5
+  lambda_Luminance: 0.1
+  reverse_train: True
+  Structure_size: 11
+  Luminance_size1: 48
+  Luminance_size2: 96
+  roi_size: *sz
+

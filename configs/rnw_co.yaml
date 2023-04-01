@@ -1,0 +1,48 @@
+
+total_epochs: 300
+imgs_per_gpu: &b 2
+workers_per_gpu: 2
+checkpoint_epoch_interval: 10
+
+data_link: None
+
+dataset:
+  width: &w 384
+  height: &h 384
+  dataroot: "./data/CORN_2"
+  phase: "train"
+  max_dataset_size: 340
+  augment: True
+  resize: False
+  shuffle: True
+  serial_batches: True
+
+model:
+  name: "rnw"
+  depth_num_layers: 50
+
+  learning_rate: 1.0e-4
+
+  imgs_per_gpu: *b
+  height: *h
+  width: *w
+  Structure_size: 11
+  roi_size: *h
+  Luminance_size1: 48
+  Luminance_size2: 96
+  use_equ: False
+
+  automask: False
+  disp_norm: False
+
+  disparity_smoothness: 0
+  lambda_Luminance: 0
+  lambda_Structure: 5
+  lambda_idt: 5
+
+  use_static_mask: False
+  static_mask_quantile: 0.1
+
+  use_position_map: False
+  G_weight: 1
+  D_weight: 1

@@ -1,0 +1,43 @@
+
+total_epochs: 300
+imgs_per_gpu: &b 2
+workers_per_gpu: 2
+checkpoint_epoch_interval: 10
+
+data_link: None
+
+dataset:
+  img_size: &sz 384
+  dataroot: "./data/CORN_2"
+  max_dataset_size: 340
+  augment: True
+  resize: False
+  shuffle: True
+  serial_batches: True
+
+model:
+  name: "StarGAN"
+
+  learning_rate: 1.0e-4
+  imgs_per_gpu: *b
+  img_size: *sz
+  style_dim: 64
+  w_hpf: 1
+  latent_dim: 16
+  num_domains: 2
+  phase: "train"
+
+
+
+  Structure_size: 11
+  roi_size: *sz
+  Luminance_size1: 48
+  Luminance_size2: 96
+
+
+  lambda_Luminance: 0
+  lambda_Structure: 5
+  lambda_idt: 5
+
+  G_weight: 1
+  D_weight: 1
