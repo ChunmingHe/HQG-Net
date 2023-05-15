@@ -37,3 +37,6 @@ python demo.py
 # Related Work
 [Structure and illumination constrained GAN for medical image enhancement](https://github.com/iMED-Lab/StillGAN), TMI21.
 # Citation
+
+## Concat
+If you have any questions, please feel free to contact me via email at chunminghe19990224@gmail.com or hcm21@mails.tsinghua.edu.cn.
