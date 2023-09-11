@@ -1,7 +1,7 @@
 # HQG-Net_TNNLS
-**HQG-Net: Unpaired Medical Image Enhancement with High-Quality Guidance**, TNNLS in submission
+**HQG-Net: Unpaired Medical Image Enhancement with High-Quality Guidance**, TNNLS
 
-[paper][[Datasets]](https://drive.google.com/drive/folders/154EsQMV3Cew8xF54YJEQ_euBimr0QLpx) [[Models]](https://drive.google.com/drive/folders/1DOI9HK4ZgDBBpLp_TLaS2Zywln6X_5hA)
+[[paper]](https://arxiv.org/abs/2307.07829) [[Datasets]](https://drive.google.com/drive/folders/154EsQMV3Cew8xF54YJEQ_euBimr0QLpx) [[Models]](https://drive.google.com/drive/folders/1DOI9HK4ZgDBBpLp_TLaS2Zywln6X_5hA)
 
 #### Authors
 [Chunming He](https://chunminghe.github.io/), [Kai Li*](http://kailigo.github.io/), Guoxia Xu, Longxiang Tang, [Jiangpeng Yan](https://yjump.github.io/), [Yulun Zhang](https://yulunzhang.com/), [Xiu Li*](https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&hl=en), Yaowei Wang
